@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(242, 238, 234);
+}
+hr{
+    border: 2px solid rgb(255, 255, 255);
+}
+h1,p{
+    color: aqua;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+}

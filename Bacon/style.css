@@ -1,0 +1,14 @@
+h1{
+    color:red;
+    font-size: 200px;
+}
+.briyani{
+    width: 400px;
+    height: 300px;
+}
+.noodles:hover{
+    background-color: red;
+}
+.briyani{
+    background-color: greenyellow;
+}
