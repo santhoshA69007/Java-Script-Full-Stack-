@@ -1,26 +1,32 @@
 .foo{
+    
     background-color: red;
-    position: relative;
+    position: absolute;
     display: inline-block;
     left: 200px;
     height: 100px;
     width: 100px;
+    top: 200px;
 
 }
 .bar{
     background-color: blue;
-    position:relative;
+    position:absolute;
     display: inline-block;
     height:100px;
     width: 100px;
-    right:100px;
+    left: 100px;
+    top: 100px;
+    
     
 }
 .bazz{
+    left: 0;
+    top: 0;
     background-color:yellow;
-    position:relative;
+    position:absolute;
     display: inline-block;
-    right: 100px;
+   
    
     height: 100px;
     width: 100px;

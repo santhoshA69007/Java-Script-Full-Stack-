@@ -1,0 +1,27 @@
+.foo{
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    left: 200px;
+    height: 100px;
+    width: 100px;
+
+}
+.bar{
+    background-color: blue;
+    position:relative;
+    display: inline-block;
+    height:100px;
+    width: 100px;
+    right:100px;
+    
+}
+.bazz{
+    background-color:yellow;
+    position:relative;
+    display: inline-block;
+    right: 100px;
+   
+    height: 100px;
+    width: 100px;
+}
