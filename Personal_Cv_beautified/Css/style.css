@@ -2,7 +2,27 @@
      
     background-color: #E4F9F5;
     margin-top: 0px 0px 0px 0px;
+    margin: 100px ;
+    position:relative;
+    padding-top: 100px;
+}
+body{
+    background-color: #E4F9F5;
+     text-align: center; 
 }
 h1{
+    margin: 0px auto  auto;
     margin-top: 0px;
+    width: 10%;
+}
+.cloud-top{
+    position:absolute;
+  right: 300px;
+  top: 50px;
+}
+.cloud-bottom{
+    position:absolute;
+    left: 300px;
+    bottom: 300px;
+    
 }
