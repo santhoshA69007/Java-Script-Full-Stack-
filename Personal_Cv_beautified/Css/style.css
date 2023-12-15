@@ -143,4 +143,29 @@ h1{
     background-image: linear-gradient(to bottom, #b528e0, #e889f5);
     text-decoration: none;
   }
+  .btn3 {
+    background: #3fd934;
+    background-image: -webkit-linear-gradient(top, #3fd934, #2fb82b);
+    background-image: -moz-linear-gradient(top, #3fd934, #2fb82b);
+    background-image: -ms-linear-gradient(top, #3fd934, #2fb82b);
+    background-image: -o-linear-gradient(top, #3fd934, #2fb82b);
+    background-image: linear-gradient(to bottom, #3fd934, #2fb82b);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
   
+  .btn:hover {
+    background: #3cfc46;
+    background-image: -webkit-linear-gradient(top, #3cfc46, #8fd934);
+    background-image: -moz-linear-gradient(top, #3cfc46, #8fd934);
+    background-image: -ms-linear-gradient(top, #3cfc46, #8fd934);
+    background-image: -o-linear-gradient(top, #3cfc46, #8fd934);
+    background-image: linear-gradient(to bottom, #3cfc46, #8fd934);
+    text-decoration: none;
+  }
