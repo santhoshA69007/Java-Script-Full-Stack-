@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .invisible{
+            visibility: hidden;
+        }
+        .huge{
+            color:red;
+            font-size: 10rem;
+        }
+    </style>
 </head>
 <body>
-    <button style="background-color: yellow;">Googele</button>
+    <h1>HELLO</h1>
+    <button class="" style="background-color: yellow;">Googele</button>
 <div><ul> <li class="foo">hi</li>
             <li class="foo">bye</li>
             <li class="foo">sad</li>
@@ -23,7 +33,11 @@
         document.querySelectorAll("li")[1].style.color="red";
        // <!--this selector select group of elements as a array and we can select particular element in the araray  -->
        document.querySelector("button").style.backgroundColor="red";
-       //javascript uses camel case letter so in css there is small case in this no - for - this we use camel case letter like font-size in css in javascript is fontSize
+       //javascript uses camel case letter so in css there is small case in this no - for - this we use camel case letter like font-size in css in javascript is fontSize\
+       document.querySelector("button").classList.add("invisible");
+       document.querySelector("button").classList.toggle("invisible");
+       //this is used to add class to the particular html element with only javascript at the run time this line
+       document.querySelector("h1").classList.add("huge");
     </script>
 </body>
 </html>
