@@ -22,6 +22,7 @@
             <li class="foo">sad</li>
             <li class="foo">angry</li>
             <li class="foo">rude</li>
+            <li><a href="https://www.youtube.com/">click me</a></li>
         </ul></div>
      
            
@@ -35,9 +36,13 @@
        document.querySelector("button").style.backgroundColor="red";
        //javascript uses camel case letter so in css there is small case in this no - for - this we use camel case letter like font-size in css in javascript is fontSize\
        document.querySelector("button").classList.add("invisible");
+       //this add is used to add class to the element 
        document.querySelector("button").classList.toggle("invisible");
        //this is used to add class to the particular html element with only javascript at the run time this line
        document.querySelector("h1").classList.add("huge");
+       //in this we are adding the huge class to the html element that is h1
+       document.querySelector("h1").innerHTML="<em>BYE!</em>"
+         //in this we are changing the text of the html element that is h1 and also adding html style to the element within the javascript
     </script>
 </body>
 </html>
