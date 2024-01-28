@@ -1,5 +1,5 @@
 {
-  "name": "my_express_server",
+  "name": "calculator",
   "version": "1.0.0",
   "description": "this for express framework programs",
   "main": "server.js",
@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {}
 }
