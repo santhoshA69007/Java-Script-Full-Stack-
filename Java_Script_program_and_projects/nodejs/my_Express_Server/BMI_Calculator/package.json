@@ -1,0 +1,16 @@
+{
+  "name": "bmi_calculator",
+  "version": "1.0.0",
+  "description": "simple program to create bmi calculator of a human being",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo hi",
+    "start": "node server.js"
+  },
+  "author": "santhosh69007",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.20.2"
+  }
+}
