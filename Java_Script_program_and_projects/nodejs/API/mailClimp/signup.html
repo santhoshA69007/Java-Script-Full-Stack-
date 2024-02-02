@@ -10,19 +10,28 @@
   <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card shadow p-4">
       <h2 class="text-center">Sign Up</h2>
-      <form>
+      <form action="/signup" method="post">
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>
           <input type="text" class="form-control" id="username" aria-describedby="usernameHelp">
         </div>
         <div class="mb-3">
+          <label for="firstName" class="form-label">Username</label>
+          <input name="firstName" type="text" class="form-control" id="firstName" aria-describedby="usernameHelp">
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Username</label>
+          <input name="lastName" type="text" class="form-control" id="lastName" aria-describedby="usernameHelp">
+        </div>
+        
+        <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password">
+          <input name="password" type="password" class="form-control" id="password">
         </div>
         <div class="mb-3">
           <label for="confirmPassword" class="form-label">Confirm Password</label>
