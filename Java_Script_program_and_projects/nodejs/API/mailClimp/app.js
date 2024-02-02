@@ -11,6 +11,7 @@ app.post("/signup",function(req,res){
     const password= req.body.password;
     const fName=req.body.firstName;
     const lName=req.body.lastName;
+    // This part of the code for sending object that contains values that we are sending it to destination api server or requesting to store the values 
     const data={
         members:[
             {
@@ -24,21 +25,34 @@ app.post("/signup",function(req,res){
         ]
     };
     const jsonData=JSON.stringify(data);
+    //https request using this option object what kind of request in this case post and also for accesing we need key that is the api key
     const options={
         method:"POST",
-        auth:"santhosh:15c2b3debb61eeac37e4aa74f4b2ea7c-us21"
+        auth:"santhosh:15c2b3debb61eeac37e4aa74f4b2ea7c-us21a"
     }
     const url="https://us21.api.mailchimp.com/3.0/lists/843903887f";
     const request=https.request(url,options,function(response){
-        response.on("data",function(){
         
-            console.log(data)
+        if(response.statusCode===200){
+            console.log("sucess");
+            res.sendFile(__dirname+"/success.html");
+        }
+        else{
+            res.sendFile(__dirname+"/failure.html");
+        }
+        console.log(response.statusCode);
+         response.on("data",function(){
+            console.log(data);
         });
 
     });
     request.write(jsonData)
     request.end()
-    res.sendFile(__dirname+"/success.html");
+   
+})
+//failure route
+app.post("/failure",function(req,res){
+    res.redirect("/");
 })
 app.listen("3000",function(){
     console.log("sever is runing on port 3000");
