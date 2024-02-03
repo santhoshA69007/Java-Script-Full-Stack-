@@ -54,8 +54,11 @@ app.post("/signup",function(req,res){
 app.post("/failure",function(req,res){
     res.redirect("/");
 })
-app.listen("3000",function(){
+//this for heroku server
+app.listen(process.env.PORT||3000,function(){
     console.log("sever is runing on port 3000");
 });
+
+
 // 15c2b3debb61eeac37e4aa74f4b2ea7c-us21
 // 843903887f
