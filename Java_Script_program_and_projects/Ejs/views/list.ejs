@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDoList</title>
+</head>
+<body>
+    <form action="/" method="post">
+<h1><%=kindOfDay%></h1>
+   <ul>
+    <li>Buy Food</li>
+    <li>Cook Food</li>
+    <li>Eat Food</li>
+    <% list.map(function(item){ %>
+        <li><%= item %></li>
+        <% }); %>
+    
+   
+   </ul>
+   
+   <label for="INPUT">Enter ur nxt list to ur current list:</label> <input type="text" name="input" id="INPUT">
+   <button type="submit">Submit</button>
+</form>
+  
+</body>
+</html>
