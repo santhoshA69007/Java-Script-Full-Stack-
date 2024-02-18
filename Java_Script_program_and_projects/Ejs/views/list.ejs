@@ -1,27 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toDoList</title>
-</head>
-<body>
-    <form action="/" method="post">
-<h1><%=kindOfDay%></h1>
-   <ul>
-    <li>Buy Food</li>
-    <li>Cook Food</li>
-    <li>Eat Food</li>
+<%-include("header")-%>
+    <div class="box" id="heading">
+        <h1><%=kindOfDay%></h1>
+    </div>
+    <div class="box">
     <% list.map(function(item){ %>
-        <li><%= item %></li>
-        <% }); %>
+    <div class="item">
+       
+            <input type="checkbox" name="input" id="INPUT">
+            <p><%= item %></p>
+        
+    </div>
+
+    <% }); %>
+
+  
+    
+    <form action="/" method="post">
+
     
    
-   </ul>
+
    
-   <label for="INPUT">Enter ur nxt list to ur current list:</label> <input type="text" name="input" id="INPUT">
-   <button type="submit">Submit</button>
+        <input type="text" name="input" id="INPUT" placeholder="New item" autocomplete="off">
+   <button type="submit" name="button" value="<%=kindOfDay%>">+</button>
 </form>
-  
-</body>
-</html>
+  </div>
+  <footer>copyright 2024 @santhoshA69007</footer>
+  <%-include("footer")-%>
