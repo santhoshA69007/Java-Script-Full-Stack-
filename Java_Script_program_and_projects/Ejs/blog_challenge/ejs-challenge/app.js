@@ -14,15 +14,10 @@ app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-///variable globalh
-let posts=[
-  {
-    "title":"coding",
-    "text":"coding"
-  }
-]
-;
 
+///variable global
+let posts=[
+];
 
 
 
@@ -30,10 +25,12 @@ let posts=[
 
 app.get('/', (req, res) => {
 
+ 
   res.render('home', {homeContent:homeStartingContent,posts:posts});
 
 });
 app.get('/about', (req, res) => {
+  console.log(req.params.topic);
 
   res.render('about', {aboutpara:aboutContent});
 });
@@ -53,7 +50,20 @@ const post={
 posts.push(post);
 res.redirect('/');
 })
+app.get('/posts/:postName', (req, res) =>{
+  posts.forEach(function(post){
+      if(req.params.postName===post.title){
+        res.render('post', {title:post.title,text:post.text});
+      }
+      else{
+        res.render('post', {title:"404",text:" "});
+      }
+  } );
+ 
+
+});
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
+

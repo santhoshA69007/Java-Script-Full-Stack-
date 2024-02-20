@@ -2,9 +2,10 @@
 <h1>HOME</h1>
 <p><%= homeContent %></p>
 <% posts.forEach((post)=>{ %>
-    <p>
-        <%= post.title %></p>
-    </p>
+    <h1>
+        <%= post.title %>
+    </h1>
+    <p><%=post.text%></p>
 <%})%>
 
 
