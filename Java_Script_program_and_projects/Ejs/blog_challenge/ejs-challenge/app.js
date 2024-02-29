@@ -52,11 +52,12 @@ res.redirect('/');
 })
 app.get('/posts/:postName', (req, res) =>{
   posts.forEach(function(post){
-      if(req.params.postName===post.title){
-        res.render('post', {title:post.title,text:post.text});
+    const link=_.lowerCase(req.params.postName);
+      if(_.lowerCase(req.params.postName)===_.lowerCase(post.title)){
+        res.render('post', {title:post.title,text:post.text,link:link});
       }
       else{
-        res.render('post', {title:"404",text:" "});
+        res.render('post', {title:"404",text:" ",link:link});
       }
   } );
  
